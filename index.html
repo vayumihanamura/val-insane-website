@@ -23,6 +23,9 @@ h1 em{font-style:normal;color:var(--pink)}.lead{font-size:1.2rem;color:#d5d7e0;m
 .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 20px;border-radius:999px;border:1px solid var(--line);font-weight:800}.primary{background:linear-gradient(90deg,var(--pink),var(--blue));color:#111}.secondary{background:rgba(255,255,255,.04)}
 .hero-card{border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,183,216,.10),rgba(169,220,255,.08));border-radius:32px;padding:34px;box-shadow:0 25px 80px rgba(0,0,0,.35)}
 .monogram{height:250px;border-radius:24px;display:grid;place-items:center;background:radial-gradient(circle,rgba(255,183,216,.24),transparent 52%),linear-gradient(135deg,#161925,#0c0e14);font-size:6rem;font-weight:950;letter-spacing:-.1em}.hero-card p{color:var(--muted)}
+.profile-photo{width:100%;height:250px;object-fit:cover;object-position:center 25%;border-radius:24px;display:block;border:1px solid var(--line)}
+.featured-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.feature-main{min-height:280px}.feature-link{display:inline-flex;margin-top:14px;padding:11px 16px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);font-weight:800}.feature-link:hover{background:rgba(255,255,255,.10)}
+@media(max-width:800px){.featured-grid{grid-template-columns:1fr}.profile-photo{height:260px}}
 section{padding:100px 0;border-top:1px solid var(--line)}.eyebrow{color:var(--pink);text-transform:uppercase;letter-spacing:.16em;font-size:.76rem;font-weight:900}
 h2{font-size:clamp(2.3rem,5vw,4rem);line-height:1;margin:10px 0 25px;letter-spacing:-.04em}.section-intro{color:var(--muted);max-width:720px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:50px}.panel{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:26px;padding:30px}
@@ -36,7 +39,7 @@ footer{padding:60px 0;color:var(--muted)}footer strong{color:#fff}
 </head>
 <body>
 <nav><div class="wrap nav"><a class="brand" href="#home">VAL<span>.</span></a><div class="links">
-<a href="#about">About</a><a href="#content">Content</a><a href="#journey">Journey</a><a href="#milestones">Milestones</a><a href="#future">Future</a><a href="#contact">Contact</a>
+<a href="#about">About</a><a href="#content">Content</a><a href="#journey">Journey</a><a href="#milestones">Milestones</a><a href="#featured">Featured</a><a href="#future">Future</a><a href="#contact">Contact</a>
 </div></div></nav>
 <main>
 <section class="hero" id="home"><div class="wrap hero-grid">
@@ -46,7 +49,7 @@ footer{padding:60px 0;color:var(--muted)}footer strong{color:#fff}
 <p class="lead">Vayumi Hanamura, known online as <strong>@val.insane</strong>. I make anime, gaming, and relatable content while building a community where people can feel seen, laugh, and be themselves.</p>
 <div class="buttons"><a class="btn primary" href="https://www.tiktok.com/@val.insane" target="_blank" rel="noopener">Follow @val.insane</a><a class="btn secondary" href="#contact">Business & Collabs</a></div>
 </div>
-<div class="hero-card"><div class="monogram">V</div><p><strong>Florida, USA</strong><br>Building a creator career one video at a time.</p></div>
+<div class="hero-card"><img class="profile-photo" src="assets/val.jpeg" alt="Val, creator behind @val.insane"><p><strong>Florida, USA</strong><br>Building a creator career one video at a time.</p></div>
 </div></section>
 <section id="about"><div class="wrap two">
 <div><div class="eyebrow">About Val</div><h2>A creator journey that started with a dream.</h2></div>
@@ -80,6 +83,13 @@ footer{padding:60px 0;color:var(--muted)}footer strong{color:#fff}
 <div><div class="eyebrow">The community</div><h2>A place where people can feel seen.</h2></div>
 <div><p class="quote">“I want people to laugh, feel noticed, and have a place to express their interests without feeling judged.”</p><p>I take video requests and try to see everyone who interacts with my content. My goal is a friendly, safe community built around shared interests, humor, anime, gaming, and being yourself.</p></div>
 </div></section>
+
+<section id="featured"><div class="wrap"><div class="eyebrow">Featured work</div><h2>Early moments worth remembering.</h2>
+<div class="featured-grid">
+<div class="card feature-main"><h3>64.8K views · 15K likes</h3><p>My most-viewed video so far, reached in four days. The comments turned into a conversation about old online names, with people sharing their own stories and connecting over the experience.</p><a class="feature-link" href="https://www.tiktok.com/@val.insane" target="_blank" rel="noopener">See @val.insane on TikTok ↗</a></div>
+<div class="card"><h3>Creator snapshot</h3><p><strong>~700</strong> followers and growing</p><p><strong>3</strong> documented 2026 milestone videos</p><p><strong>Anime · Gaming · Relatable</strong></p><p style="color:var(--muted)">Stats are current/self-reported and may change as the account grows.</p></div>
+</div></div></section>
+
 <section id="future"><div class="wrap"><div class="eyebrow">What's next</div><h2>The story is just getting started.</h2>
 <div class="cards">
 <div class="card"><h3>Creator career</h3><p>Build a full-time creator career and grow a substantial community.</p></div>
